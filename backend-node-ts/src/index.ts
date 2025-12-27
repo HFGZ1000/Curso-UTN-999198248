@@ -1,10 +1,16 @@
 import express, { Request, Response } from 'express';
 import path from 'path';
 import { engine } from 'express-handlebars';
+
+// Importar las rutas
+import usersRouter from './routes/users.routes';
 import viewsRouter from './routes/views.routes';
 
 const app = express();
 const PORT = 3000;
+
+// Middleware para interpretar JSON
+app.use(express.json());
 
 // Configuración del motor de plantillas Handlebars
 app.engine('handlebars', engine());
@@ -39,6 +45,8 @@ app.get('/api', (req: Request, res: Response) => {
 app.get('/api/saludo', (req: Request, res: Response) => {
   res.json({ mensaje: 'Hola desde la API 🚀' });
 });
+
+app.use('/api/users', usersRouter);
 
 // Rutas de vistas
 app.use('/handlebars', viewsRouter);
