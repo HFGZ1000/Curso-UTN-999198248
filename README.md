@@ -35,5 +35,7 @@
 - [📝 Clase 18.2 - Roles y Permisos Dinamicos](./Clase-18/Clase-18.2-Roles-y-Permisos-Dinamicos.md)
 - [📝 Clase 19 - Integracion JS MongoDB](./Clase-19/Clase-19-Integracion-JS-MongoDB.md)
 - [📝 Clase 20 - Dominios, Hosting y Firebase](./Clase-20/Clase-20-Dominios-Hosting-Firebase.md)
+- Clase 21 - Sin documentos, avances sobre backend-stock-mongo.
+- Clase 22 - Sin documentos, avances sobre backend-stock-mongo.
 
 > Agregaré más enlaces a medida que se creen nuevas clases.
